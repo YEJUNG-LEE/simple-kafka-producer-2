@@ -24,7 +24,7 @@ public class SimpleProducer {
         KafkaProducer<String, String> producer = new KafkaProducer<>(configs);
 
         Random random = new Random();
-				int number=0;
+
         while (true) {
             String id = String.valueOf(random.nextInt(1000));
             String currentTime = String.valueOf(System.currentTimeMillis());
